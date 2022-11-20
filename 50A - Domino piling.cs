@@ -9,6 +9,5 @@ class Program
                 
         int result = (m * n) / 2;
         Console.WriteLine(result);
-
     }
 }

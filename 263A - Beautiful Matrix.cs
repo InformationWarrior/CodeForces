@@ -15,3 +15,32 @@ class Program
         }
     }    
 }
+
+
+//Method 2
+using System;
+class Program
+{
+    public static void Main()
+    {
+        int X = 0, Y = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            string[] token = Console.ReadLine().Split();
+
+            for (int j = 0; j < token.Length; j++)
+            {
+                if (token[j] == "1")
+                {
+                    X = j + 1;
+                    Y = i + 1;
+                    break;
+                }
+            }
+        }
+
+        int ans = Math.Abs(X - 3) + Math.Abs(Y - 3);
+
+        Console.WriteLine(ans);
+    }
+}

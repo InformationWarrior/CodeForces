@@ -49,3 +49,24 @@ class Program
         }
     }    
 }
+
+//Solution 3
+
+using System.Text;
+using static System.Console;
+class Program
+{
+    static void Main()
+    {
+        int t = int.Parse(ReadLine());
+        for (int i = 0; i < t; i++)
+        {
+            string b = ReadLine();
+            StringBuilder a = new StringBuilder();
+            a.Append(b.Substring(0, 2));
+            for (int j = 3; j <=b.Length; j+=2)
+                a.Append(b[j]);
+            WriteLine(a);
+        }
+    }    
+}
